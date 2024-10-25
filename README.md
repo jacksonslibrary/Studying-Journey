@@ -31,7 +31,7 @@ Below are the detailed write-ups for each machine I've completed. Each write-up 
 
 - [Blue](PJPT/Blue.md)
 - [Academy](PJPT/Academy.md)
-- 
+- [Dev](PJPT/Dev.md)
 
 As I progress, I'll continue to add more machine write-ups along with my detailed processes, tools used, and screenshots to document how I solved each challenge.
 
