@@ -1,5 +1,5 @@
 # Studying Journey
-Welcome to my journey in studying penetration testing, where I document what I'm learning, including detailed machine write-ups, tools used, and key concepts. This repository serves as a personal log and resource as I prepare for various security certifications and challenges.
+Welcome to my journey in studying penetration testing, where I document what I'm learning through machine write-ups. This repository serves as a personal log and resource as I prepare for various security certifications and challenges.
 
 ## Current Focus
 I am currently preparing for the **Practical Junior Penetration Tester (PJPT)** certification from TCM Security. This repo will include:
@@ -10,8 +10,8 @@ I am currently preparing for the **Practical Junior Penetration Tester (PJPT)** 
 ## Table of Contents
 1. [About the PJPT Exam](#about-the-pjpt-exam)
 2. [Machine Write-Ups](#machine-write-ups)
-   - [Blue](writeups/Blue.md)
-   - [Academy](writeups/Academy.md)
+   - [Blue](PJPT/Blue.md)
+   - [Academy](PJPT/Academy.md)
 3. [Tools & Techniques](#tools--techniques)
 4. [Lessons Learned](#lessons-learned)
 
@@ -28,8 +28,8 @@ This repository is part of my preparation to reinforce key concepts and gain han
 ## Machine Write-Ups
 Below are the detailed write-ups for each machine I've completed. Each write-up includes enumeration, exploitation, and post-exploitation details.
 
-- [Blue](writeups/Blue.md)
-- [Academy](writeups/Academy.md)
+- [Blue](PJPT/Blue.md)
+- [Academy](PJPT/Academy.md)
 
 As I progress, I'll continue to add more machine write-ups along with my detailed processes, tools used, and screenshots to document how I solved each challenge.
 
