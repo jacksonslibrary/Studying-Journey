@@ -1,3 +1,5 @@
+# 2nd Capstone Machine
+This is my write-up for the second machine in the capstone section of the Practical Ethical Hacking course.
 ## Machine Information
 - **Name**: Academy
 - **Difficulty**: Easy
