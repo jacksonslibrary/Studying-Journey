@@ -11,7 +11,7 @@ This is my write-up for the fourth machine in the capstone section of the Practi
 - Burp Suite: For modifying requests and brute forcing logins.
 - netcat: To create port listeners.
 - winPEAS: To search for possible local privilege escalation paths.
-- MSFvenom: To create a rever shell payload.
+- MSFvenom: To create a reverse shell payload.
 
 ## Objectives
 - Enumerate the system and identify services.
