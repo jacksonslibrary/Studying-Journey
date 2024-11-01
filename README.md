@@ -13,6 +13,7 @@ I am currently preparing for the **Practical Junior Penetration Tester (PJPT)** 
    - [Blue](PJPT/Blue.md)
    - [Academy](PJPT/Academy.md)
    - [Dev](PJPT/Dev.md)
+   - [Butler](PJPT/Butler.md)
 3. [Tools & Techniques](#tools--techniques)
 4. [Lessons Learned](#lessons-learned)
 
@@ -32,6 +33,7 @@ Below are the detailed write-ups for each machine I've completed. Each write-up 
 - [Blue](PJPT/Blue.md)
 - [Academy](PJPT/Academy.md)
 - [Dev](PJPT/Dev.md)
+- [Butler](PJPT/Butler.md)
 
 As I progress, I'll continue to add more machine write-ups along with my detailed processes, tools used, and screenshots to document how I solved each challenge.
 
@@ -39,11 +41,15 @@ As I progress, I'll continue to add more machine write-ups along with my detaile
 Throughout this process, I've used a variety of tools and techniques for different phases of penetration testing:
 
 - **Nmap**: Network discovery and port scanning.
+- **netcat**: To create port listeners.
 - **Hashcat**: Password cracking.
 - **ffuf**: Directory and subdomain fuzzing.
 - **LinPEAS**: Linux privilege escalation enumeration script.
 - **Metasploit**: Exploitation framework.
 - **pspy**: Tool for monitoring processes for privilege escalation.
+- **john**: To crack password hashes.
+- **winPEAS**: To search for possible local privilege escalation paths on Windows.
+- **MSFvenom**: To create payloads.
 
 ## Lessons Learned
 Throughout my studying journey, I've learned the following key lessons:
