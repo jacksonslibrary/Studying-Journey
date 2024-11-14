@@ -34,8 +34,7 @@ Below are the detailed write-ups for each machine I've completed. Each write-up 
 - [Academy](PJPT/Academy.md)
 - [Dev](PJPT/Dev.md)
 - [Butler](PJPT/Butler.md)
-
-As I progress, I'll continue to add more machine write-ups along with my detailed processes, tools used, and screenshots to document how I solved each challenge.
+- [Blackpearl](PJPT/Blackpearl.md)
 
 ## Tools & Techniques
 Throughout this process, I've used a variety of tools and techniques for different phases of penetration testing:
@@ -50,6 +49,7 @@ Throughout this process, I've used a variety of tools and techniques for differe
 - **john**: To crack password hashes.
 - **winPEAS**: To search for possible local privilege escalation paths on Windows.
 - **MSFvenom**: To create payloads.
+- **Burp Suite**: For modifying requests and brute forcing logins.
 
 ## Lessons Learned
 Throughout my studying journey, I've learned the following key lessons:
@@ -58,8 +58,5 @@ Throughout my studying journey, I've learned the following key lessons:
 - The value of automation balanced with manual exploration.
 - The significance of clear, structured reporting.
 
-I'll continue adding to this section as I discover more insights during my learning process.
-
 ## Contributing or Feedback
-If you have any feedback, suggestions, or resources that might help me on this journey, feel free to reach out via GitHub Issues or submit a pull request.
-
+If you have any feedback, suggestions, or resources that might help me on this journey, feel free to reach out via creating an issue.
