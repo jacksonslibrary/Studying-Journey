@@ -3,10 +3,11 @@ Welcome to my journey in studying penetration testing, where I document what I'm
 
 ## Table of Contents
 1. [Current Focus](#current-focus) 
-1. [About the PJPT Exam](#about-the-pjpt-exam)
-2. [Machine Write-Ups](#machine-write-ups)
-3. [Tools & Techniques](#tools--techniques)
-4. [Lessons Learned](#lessons-learned)
+2. [About the PJPT Exam](#about-the-pjpt-exam)
+3. [Machine Write-Ups](#machine-write-ups)
+4. [Tools & Techniques](#tools--techniques)
+5. [Lessons Learned](#lessons-learned)
+6. [Contributing or Feedback](#contributing-or-feedback)
 
 ## Current Focus
 I am currently preparing for the **Practical Junior Penetration Tester (PJPT)** certification from TCM Security. This repo will include:
