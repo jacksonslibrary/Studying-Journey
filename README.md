@@ -1,17 +1,18 @@
 # Studying Journey
 Welcome to my journey in studying penetration testing, where I document what I'm learning through machine write-ups. This repository serves as a personal log and resource as I prepare for various security certifications and challenges as well as for the joy of learning.
 
+## Table of Contents
+1. [Current Focus](#current-focus) 
+1. [About the PJPT Exam](#about-the-pjpt-exam)
+2. [Machine Write-Ups](#machine-write-ups)
+3. [Tools & Techniques](#tools--techniques)
+4. [Lessons Learned](#lessons-learned)
+
 ## Current Focus
 I am currently preparing for the **Practical Junior Penetration Tester (PJPT)** certification from TCM Security. This repo will include:
 - Machine write-ups for rooted machines.
 - Tools and methodologies used.
 - Lessons learned from each challenge.
-
-## Table of Contents
-1. [About the PJPT Exam](#about-the-pjpt-exam)
-2. [Machine Write-Ups](#machine-write-ups)
-3. [Tools & Techniques](#tools--techniques)
-4. [Lessons Learned](#lessons-learned)
 
 ## About the PJPT Exam
 The **Practical Junior Penetration Tester (PJPT)** exam focuses on assessing skills in:
