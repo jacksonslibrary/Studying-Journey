@@ -64,3 +64,19 @@
 - Follow Center for Internet Security (CIS) guidlines and standard
 - Address risk tolerance and requirements specific to organization
 - All teams should understand to make secure decisions
+
+### Vulnerable and Outdated Components
+- "You are likely vulnerable: if you don't know all the versions of all the components you use. ... [and] if the software is vulnerable, unsupported, or out of date." - OWASP
+- Web apps are vulnerable if their components are vulnerable
+- Steps to prevent:
+  - Know your assets
+  - Check for vulnerable components
+  - Update and patch
+- Less technical and more people and process issue
+- Requires strong vulnerability management program
+
+### Identification and Authentication Failures
+- "Confirmation of the user's identity, authentication, and session management is critical to protect against authentication-related attacks." - OWASP
+- Web app should confirm you are who you say you are
+- Users should be identified and authenticated properly
+- Software must ask for identification, verify identification, and invalidate session before authenticating a new user
