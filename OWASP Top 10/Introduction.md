@@ -33,7 +33,7 @@
 - Injection happens when an app accepts data an input and processes it as an instruction
 - "An application is vulnerable to attack when hostile data is used." - OWASP
 - Incorrect handling of input can allow injection
-- Unintended outcomes can be caused by malicous input
+- Unintended outcomes can be caused by malicious input
 - Cross-site scripting is a version that doesn't neutralize user input
   - Doesn't check the input is as intended
 - SQL injection is injection attacking a SQL database
@@ -41,7 +41,7 @@
 
 ### Insecure Design
 - "A new category focusing on risks related to design and architectural flaws." - OWASP
-- Addresses design-level flaw-type vulnerabilities rather than code-level vulnerabilies
+- Addresses design-level flaw-type vulnerabilities rather than code-level vulnerabilities
 - Design errors can be the root cause of much larger problems
 - Examples:
   - Sensitive information in error message
@@ -60,8 +60,8 @@
   - Enabling unnecessary services or features
   - Improper cloud permission services
   - Failing to update software
-- Each setting and configuration should be indentified and assessed for security
-- Follow Center for Internet Security (CIS) guidlines and standard
+- Each setting and configuration should be identified and assessed for security
+- Follow Center for Internet Security (CIS) guidelines and standard
 - Address risk tolerance and requirements specific to organization
 - All teams should understand to make secure decisions
 
@@ -80,3 +80,15 @@
 - Web app should confirm you are who you say you are
 - Users should be identified and authenticated properly
 - Software must ask for identification, verify identification, and invalidate session before authenticating a new user
+- Examples:
+  - Password reset skips sending a verification code
+  - Password reset skips checking provided code is correct
+  - Web app fails to properly terminate a user's session, allowing another user to inherit the previous user's session upon access
+ 
+### Software and Data Integrity Failures
+- "An insecure CI/CD pipeline can introduce the potential for system compromise. Many applications now include auto-update functionality, where updates are downloaded without sufficient integrity verification." - OWASP
+- As CI/CD pipelines automate processes, changing the way web apps are built, a potential security problem arises
+- Software can be potentially vulnerable if the automation receives something insecure
+- Emphasis on rapid and iterative development environments and vendor updates
+- Includes insecure deserialization: manipulation of serialized data can result in undesirable consequences when deserialized
+- Automated processes must be verified to be secure
