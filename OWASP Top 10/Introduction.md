@@ -1,4 +1,4 @@
-# OWASP Top 10 Notes: Learning the OWASP Top 10
+# Learning the OWASP Top 10
 
 ## Introduction
 
@@ -92,3 +92,31 @@
 - Emphasis on rapid and iterative development environments and vendor updates
 - Includes insecure deserialization: manipulation of serialized data can result in undesirable consequences when deserialized
 - Automated processes must be verified to be secure
+
+### Security Logging and Monitoring Failures
+- "Without logging and monitoring, breaches cannot be detected." - OWASP
+- Assumes security incidents are imminent
+- Breaches are not just one action, they are multiple steps that build off each other
+- Each step should be logged and monitored
+- Examples:
+  - File views and downloads
+  - Incorrect authentication attempts
+  - Logging in
+  - Unexpected loggin in times and locations
+- About 20% of breaches go undiscovered for months
+- Infiltrated systems can be discovered by logging, monitoring, and alerting
+- Aids teams in stopping an attack
+
+### Server Side Request Forgery (SSRF)
+- SSRF flaws ... [allow] an attacker to coerce the application to send a crafted request to an unexpected destination." - OWASP
+- An attacker sends a request to a web app appearing to be the victim's server
+- Because the server is trusted, an attacker may be able to access sensitive and administrative functions
+- Enforcing an allow or deny list should be used to prevent SSRF
+- Use an allow list when you know the specific location legitimate external resouces come from
+- Otherwise, use a deny list to prevent the server from requesting sensitive internal resources
+
+### Summary
+- All of these issues are everywhere
+- The apps you use have vulnerabilities
+- Find the top 10 at your organization
+- The security team is not solely responsible. Building secure web apps involves multiple teams working together.
