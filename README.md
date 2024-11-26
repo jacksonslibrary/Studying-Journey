@@ -31,7 +31,7 @@ Below are the detailed write-ups for machines I've completed during the Practicl
 Below are notes for each course in the Master the OWASP Top 10 learning path.
 
 - [Learning the OWASP Top 10](OWASP%20Top%2010/Learning%20the%20OWASP%20Top%2010.md) 
-- [#1 Broken Access Control and #2 Cryptographic Failures](OWASP%20Top%2010/%231%20Broken%20Access%20Control%20and%20%232%20Cryptographic%20Failures))
+- [#1 Broken Access Control and #2 Cryptographic Failures](OWASP%20Top%2010/%231%20Broken%20Access%20Control%20and%20%232%20Cryptographic%20Failures.md))
 - (More notes to come as I progress through the Learning Path!)
 
 ## Tools & Techniques
