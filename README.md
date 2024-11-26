@@ -1,41 +1,41 @@
 # Studying Journey
-Welcome to my journey in studying penetration testing, where I document what I'm learning through machine write-ups. This repository serves as a personal log and resource as I prepare for various security certifications and challenges as well as for the joy of learning.
+Welcome to my journey in studying cybersecurity, where I document what I'm learning through machine write-ups and note-taking. This repository serves as a personal log and resource as I prepare for various security certifications and challenges as well as for the joy of learning.
 
 ## Table of Contents
-1. [Current Focus](#current-focus) 
-2. [About the PJPT Exam](#about-the-pjpt-exam)
+1. [Current Studies](#current-studies) 
 3. [Machine Write-Ups](#machine-write-ups)
-4. [Tools & Techniques](#tools--techniques)
-5. [Lessons Learned](#lessons-learned)
-6. [Contributing or Feedback](#contributing-or-feedback)
+4. [OWASP Top 10 Notes](#owasp-top-10-notes)
+5. [Tools & Techniques](#tools--techniques)
+6. [Lessons Learned](#lessons-learned)
+7. [Contributing or Feedback](#contributing-or-feedback)
 
-## Current Focus
-I am currently preparing for the **Practical Junior Penetration Tester (PJPT)** certification from TCM Security. This repo will include:
-- Machine write-ups for rooted machines.
-- Tools and methodologies used.
-- Lessons learned from each challenge.
+## Current Studies
 
-## About the PJPT Exam
-The **Practical Junior Penetration Tester (PJPT)** exam focuses on assessing skills in:
-- Enumeration
-- Vulnerability discovery
-- Exploitation
-- Privilege escalation
-- Reporting findings
+### PJPT
+I am currently preparing for the Practical Junior Penetration Tester (PJPT) certification from TCM Security. This directory includes machine write-ups for rooted machines from the Practical Ethical Hacking course. This course teaches ethical hacking at an associate level with a major focus on Active Directory Hacking and also includes web application hacking and report writing.
 
-This repository is part of my preparation to reinforce key concepts and gain hands-on experience by rooting various vulnerable machines.
+### OWASP Top 10
+I am also diving deeper into web application security. To strengthen my understanding, I’m completing the LinkedIn Learning Path titled Master the OWASP Top 10. This learning path includes six courses that explore the most critical security risks to web applications, providing a comprehensive foundation in secure development and testing practices. I’ve created a directory for studying the OWASP Top 10, where I’m taking detailed notes on each topic.
 
 ## Machine Write-Ups
-Below are the detailed write-ups for each machine I've completed. Each write-up includes enumeration, exploitation, and post-exploitation details.
+Below are the detailed write-ups for machines I've completed during the Practicl Ethical Hacker Course.
 
 - [Blue](PJPT/Blue.md)
 - [Academy](PJPT/Academy.md)
 - [Dev](PJPT/Dev.md)
 - [Butler](PJPT/Butler.md)
 - [Blackpearl](PJPT/Blackpearl.md)
+- (More write-ups to come as I progress through the course!)
+
+## OWASP Top 10 Notes
+Below are notes for each course in the Master the OWASP Top 10 learning path.
+
+- [Learning the OWASP Top 10](OWASP%20Top%2010/Learning%20the%20OWASP%20Top%2010.md) 
+- [#1 Broken Access Control and #2 Cryptographic Failures](OWASP%20Top%2010/%231%20Broken%20Access%20Control%20and%20%232%20Cryptographic%20Failures))
+- (More notes to come as I progress through the Learning Path!)
 
 ## Tools & Techniques
-Throughout this process, I've used a variety of tools and techniques for different phases of penetration testing:
+Throughout this process, I've used a variety of tools and techniques for penetration testing and web application security:
 
 - **Nmap**: Network discovery and port scanning.
 - **netcat**: To create port listeners.
