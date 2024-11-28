@@ -67,3 +67,25 @@
   - Can sensitive data that should only be accessed by privilege roles be accessed by a nonprivileged user?
   - Can admin functions be accessed if the tester is logged in as a nonadministrative user?
   - Who should not be able to access admin functions?
+ 
+## Cryptographic Failure
+
+### What is cryptographic failure?
+- When cryptography doesn't work as intended
+- Cryptography protects messages from being read
+- Modern encryption algorithms are strong and protect data well
+- Confidential data can be accessed if not encrypted or encrypted poorly
+
+### Example 1: 2021 GoDaddy plaintext passwords
+- GoDaddy reported a data breach that included plaintext passwords in 2021
+- SFTP authenticated used plaintext passwords
+- Active usernames and passwords were accessible for about a month and a half
+- Allowed attacker to authenticate to SFTP and access files, change configurations, or change file permissions for WordPress sites
+- Flaw was fixed immediately 
+
+### Example 2: Using a broken or risky cryptographic algorithm
+- NVD reports about 9 cases of broken or risky cryptographic algorithm between 2017 and 2021
+- Vulnerabilities were found in a mail server, medical equipment software, email fowarding service, electric equipment, 2 kinds of security software, and video conference software
+- Likely used an out of date cryptographic algorithm
+- Strong algorithms can still be broken
+- Cryptographic algorithms no longer provide protection as new attacks and computinig power adavnce
