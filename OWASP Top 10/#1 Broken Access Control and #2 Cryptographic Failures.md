@@ -85,7 +85,36 @@
 
 ### Example 2: Using a broken or risky cryptographic algorithm
 - NVD reports about 9 cases of broken or risky cryptographic algorithm between 2017 and 2021
-- Vulnerabilities were found in a mail server, medical equipment software, email fowarding service, electric equipment, 2 kinds of security software, and video conference software
+- Vulnerabilities were found in a mail server, medical equipment software, email forwarding service, electric equipment, 2 kinds of security software, and video conference software
 - Likely used an out of date cryptographic algorithm
 - Strong algorithms can still be broken
-- Cryptographic algorithms no longer provide protection as new attacks and computinig power adavnce
+- Cryptographic algorithms no longer provide protection as new attacks and computing power advance
+
+### Prevention techniques: Data classification
+- 1st step: decide what needs to be encrypted
+- Make a purposeful decision to encrypt sensitive data
+- Plan to encrypt data properly
+- Data classification: defines categories of data and their appropriate protections
+- Can be driven by regulatory compliance (e.g. GDPR, HIPAA, CCPA)
+- Every outcome in cybersecurity is the result of a business process
+- Data classification policy implements this
+
+### Prevention techniques: Proper key management
+- Proper key management is perhaps the most important security control to prevent cryptographic failure
+- Keys are used to decrypt data
+- Cryptographic keys need to be properly protected
+- Modern databases give you an option of where to store keys
+- Options:
+  - Local storage: stored on the same server as the data. Convenient but less secure
+  - Off the server: best practice
+- Encryption key management systems also support access control, logging, backups, and rotation
+- Access control and logging manages which individuals and apps can access the keys
+- Keys are critical infrastructure
+- Key should also be backed up and rotated regularly
+
+### Prevention techniques: Secure protocols
+- Using a hash function is not encryption
+- The results are not interchangeable
+- Hashes are vulnerable to attacks like brute force
+- Ciphertexts can be converted to plaintext if the attacker has the correct key
+- Using both encryption and hashing is good practice
