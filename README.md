@@ -20,11 +20,11 @@ I am also diving deeper into web application security. To strengthen my understa
 ## Machine Write-Ups
 Below are the detailed write-ups for machines I've completed during the Practicl Ethical Hacker Course.
 
-- [Blue](PJPT/Blue.md)
-- [Academy](PJPT/Academy.md)
-- [Dev](PJPT/Dev.md)
-- [Butler](PJPT/Butler.md)
-- [Blackpearl](PJPT/Blackpearl.md)
+- [Blue](PJPT/New%20Capstone/Blue.md)
+- [Academy](PJPT/New%20Capstone/Academy.md)
+- [Dev](PJPT/New%20Capstone/Dev.md)
+- [Butler](PJPT/New%20Capstone/Butler.md)
+- [Blackpearl](PJPT/New%20Capstone/Blackpearl.md)
 - (More write-ups to come as I progress through the course!)
 
 ## OWASP Top 10 Notes
