@@ -39,6 +39,85 @@ Example:
 - If you can inject JS, it runs with the same privileges and security context of the page
 
 ### Executing JavaScript Code
+- We  must know how JS code may be executed to exploit the vulnerabilities
+- There are 2 main approaches
+
+\<Script> element:
+- Reference an external file
+- Local file
+- Different server
+- Inline JS
+- Inline is commmon for testing:
+```
+<script>
+  doStudd();
+</script>
+```
+
+HTML attribute:
+- Start with on and then the name of an event:
+```
+<input
+  oninput="doStuff()"
+  type="text">
+```
+- The code will run when the even is fired
+- Over 100 different events
+- Some web apps use a denial list of events
+
+Mutated XSS:
+`<img ="><script>alert(1)</script>">`
+- It looks like an image tag and an attribute without a name
+- Value in double quotes with angle brackets
+- HTML doesn't have to be 100% correct
+- Browsers compensate, too much here
+- Replaces attribute value with JS code
+- Specific vector used to evade some filters
+
+### Types of Cross-Site Scripting
+Reflected XSS:
+- Type 1
+- Attack is part of the HTTP request
+- Request contains malicous JS code etc.
+- Reflected means returned by the server
+- Most common
+
+Stored XSS:
+- Type 2
+- Permanent
+- JS code injected into app affects other users
+- More dangerous than reflected XSS
+- Less common
+
+DOM-based XSS:
+- Type 0
+- Everything happens in the browser
+- No server involved
+- Super rare but increasing with SPAs
+
+## Reflected XSS
+### Introduction:
+- Find and exploit in demo app
+- Demo app is for events and ticktts
+- Has login and search features
+
+### Reflected XSS in Detail
+- Often typical patterns
+
+Example:
+- A search function that displays the search term on the results page
+- In PHP: "You searched for: `<?= $_GET['q'] ?>`"
+- This is insecure processing of the search query
+- The search query can be a payload: `<script>alert(1)</script>` resulting in reflected XSS
+- In an HTML attribute: `<input type="text" name="q" value="<?= $_GET['q'] ?>`
+- Also insecure processing of the search query but requires triggering an event
+- `<script>alert(1)</script>` would be treated as text
+- Set up JS event handler: `" onmouseover="alert(1)` executing the JS when the mouse moves over the text
+
+### Demo: Finding Reflected XSS
+
+
+
 
 
 
