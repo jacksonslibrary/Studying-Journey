@@ -6,7 +6,7 @@
 
 ### Disable NTLM authentication on network
 - Pro: Completely stops the attack
-- Con: IF Kerberos stops working, Windows defaults back to NTLM
+- Con: If Kerberos stops working, Windows defaults back to NTLM
 
 ### Account tiering:
 - Pro: Limits domains admins to specific tasks (e.g. only long onto server with need for DA)
