@@ -1,0 +1,12 @@
+## Post-Compromise Attack Strategy
+- We have an account, now what?
+- We should be looking for quick wins
+  - Kerberoasting
+  - Secretsdump
+  - Pass-the-hash/password
+- No quick wins? Dig deeper!
+  - Enumerate (Bloodhound, etc.)
+  - Where does your account have access?
+  - Old vulnerabilities die hard
+- Think outside the box
+- How can I move laterally until I can move vertically?
