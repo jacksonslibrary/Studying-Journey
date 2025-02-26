@@ -9,7 +9,7 @@
 
 ### Attacks
 - Can use `gpp-decrypt <cpassword>` to decrypt it
-- Can use metasploit `auxiliary/smb_enum_gpp` using credentials to access SYSVOL
+- Can use metasploit `auxiliary/scanner/smb/smb_enum_gpp` using credentials to access SYSVOL
 
 ### Mitigations
 - PATCH! Fixed in KB2962486
