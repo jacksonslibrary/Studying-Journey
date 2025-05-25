@@ -12,24 +12,16 @@ Welcome to my journey in studying cybersecurity, where I document what I'm learn
 ## Current Studies
 
 ### OSCP
-Curently trying harder. Notes a private per Offsec.
+Curently trying harder. Notes are private per Offsec.
 
 ## Machine Write-Ups
-Below are the detailed write-ups for machines I've completed during the Practicl Ethical Hacker Course.
+Below are the detailed write-ups for the captstone machines.
 
 - [Blue](PJPT/New%20Capstone/Blue.md)
 - [Academy](PJPT/New%20Capstone/Academy.md)
 - [Dev](PJPT/New%20Capstone/Dev.md)
 - [Butler](PJPT/New%20Capstone/Butler.md)
 - [Blackpearl](PJPT/New%20Capstone/Blackpearl.md)
-- (More write-ups to come as I progress through the course!)
-
-## OWASP Top 10 Notes
-Below are notes for each course in the Master the OWASP Top 10 learning path.
-
-- [Learning the OWASP Top 10](OWASP%20Top%2010/Learning%20the%20OWASP%20Top%2010.md) 
-- [#1 Broken Access Control and #2 Cryptographic Failures](OWASP%20Top%2010/%231%20Broken%20Access%20Control%20and%20%232%20Cryptographic%20Failures.md))
-- (More notes to come as I progress through the Learning Path!)
 
 ## Tools & Techniques
 Throughout this process, I've used a variety of tools and techniques for penetration testing and web application security:
