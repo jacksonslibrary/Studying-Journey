@@ -11,11 +11,8 @@ Welcome to my journey in studying cybersecurity, where I document what I'm learn
 
 ## Current Studies
 
-### PJPT
-I am currently preparing for the Practical Junior Penetration Tester (PJPT) certification from TCM Security. This directory includes machine write-ups for rooted machines from the Practical Ethical Hacking course. This course teaches ethical hacking at an associate level with a major focus on Active Directory Hacking and also includes web application hacking and report writing.
-
-### OWASP Top 10
-I am also diving deeper into web application security. To strengthen my understanding, I’m completing the LinkedIn Learning Path titled Master the OWASP Top 10. This learning path includes six courses that explore the most critical security risks to web applications, providing a comprehensive foundation in secure development and testing practices. I’ve created a directory for studying the OWASP Top 10, where I’m taking detailed notes on each topic.
+### OSCP
+Curently trying harder. Notes a private per Offsec.
 
 ## Machine Write-Ups
 Below are the detailed write-ups for machines I've completed during the Practicl Ethical Hacker Course.
